@@ -1,7 +1,7 @@
 # Pie
-A very rudimentary programming language written in Golang
+A very rudimentary scripting language written in Golang.
 
-## Usage
+## Compilation Commands
 Normal: `go run pie.go -f=path/to/file.pie`
 Verbose: `go run pie.go -f=path/to/file.pie -v`
 
@@ -13,4 +13,4 @@ Verbose: `go run pie.go -f=path/to/file.pie -v`
 - Features
   1. Functions
   2. Variables
-  3. Expressions
+  3. Expressions (+, -, /, *)

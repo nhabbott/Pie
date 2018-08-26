@@ -1,5 +1,4 @@
 print "hello world"
-print "t"
-print "34"
-print "fu"
-55 + 2
+print "66"
+print (55 + 2) * (4 - 5895)
+print 34
