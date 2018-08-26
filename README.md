@@ -5,7 +5,7 @@ A very rudimentary programming language written in Golang
 Normal: `go run pie.go -f=path/to/file.pie`
 Verbose: `go run pie.go -f=path/to/file.pie -v`
 
-### Currently Implemented
+### In Progress
 - Lexer
 
 ### To be Implemented
