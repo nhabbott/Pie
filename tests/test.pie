@@ -1,4 +1,4 @@
 print "hello world"
 print "66"
-print (55 + 2) * (4 - 5895)
+print (55)
 print 34

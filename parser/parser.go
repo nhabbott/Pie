@@ -2,6 +2,8 @@ package parser
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 )
 
 // Prints given string and removes anything added by tokenization
@@ -18,7 +20,33 @@ func doPrint(toPrint string) {
 
 // Supposed to eval the numbers in a string; still haven't figured this out
 func eval(expr string) {
+	contents := strings.Split(expr[5:], "")
+	state := 0
+	temp := ""
+	ret := 0
 
+	for _, char := range contents {
+		temp += char
+		if temp == "(" {
+			if state == 0 {
+				state = 1
+				temp = ""
+			}
+		} else if state == 1 && temp == "(" {
+			temp = ""
+		} else if state == 1 && temp == ")" {
+			state = 0
+			temp = ""
+		} else if state == 1 {
+			t, err := strconv.Atoi(temp)
+			if err != nil {
+				panic(err)
+			}
+			ret += t
+			temp = ""
+		}
+	}
+	fmt.Println(ret)
 }
 
 // Parse parses given tokens
@@ -33,7 +61,7 @@ func Parse(tokens []string) {
 			} else if tokens[i+1][0:3] == "num" {
 				doPrint(tokens[i+1])
 			} else if tokens[i+1][0:4] == "expr" {
-				doPrint(tokens[i+1])
+				//doPrint(tokens[i+1])
 				eval(tokens[i+1])
 			}
 			i += 2
