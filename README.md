@@ -1,4 +1,7 @@
 # Pie
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/78d14797ee4b46f7bdfb04effea54cfa)](https://app.codacy.com/app/nhabbott/Pie?utm_source=github.com&utm_medium=referral&utm_content=nhabbott/Pie&utm_campaign=Badge_Grade_Dashboard)
+
 A very rudimentary scripting language written in Golang.
 
 ## Math
