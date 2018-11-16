@@ -22,7 +22,10 @@ If applicable, add screenshots to help explain your problem.
 
 **Desktop (please complete the following information):**
  - OS: [e.g. Windows, Ubuntu, macOS]
- - Version [e.g. 10, 16.04, High Sierra]
+ - Version: [e.g. 10, 16.04, High Sierra]
+ 
+ **Go**
+ - Version:
 
 **Additional context**
 Add any other context about the problem here.
